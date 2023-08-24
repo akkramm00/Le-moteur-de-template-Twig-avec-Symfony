@@ -92,7 +92,7 @@
          <h2> {{ titre }}</h2>
 
           <br><br>
-          Twig fornit aussi ceratines variables globales, en voici la liste avec une succincte description:<br>
+          Twig fournit aussi ceratines variables globales, en voici la liste avec une succincte description:<br>
           * debug : booleen indiquant si le débogage est activé ou non<br>
           * environnement : indique l'environnement en cours , comme dev ou prod<br>
           * request : instance de Symfony\Component\Httpfundation\Request<br>
@@ -119,6 +119,16 @@
             Sachez que vous pouvez créer vous-mêmes vos pro^pores filtres selon vos besoins .<br>
             Un filtre = une fonction d'une classe PHP appelée qui recevera vos différents paramètres.
           </p>
+  <h2>Raw et Length </h2>
+          <p>
+            {{titre |raw |length>50 }}<br>
+            Cette expression affiche la longueur de la chaîne de caractères stockée dans la variable "titre".<br>
+
+            Elle utilise également deux filtres: <br>
+            * raw :permet de désactiver m'échapement des caractères HTML dans la chaine de caractères. cela signifie que les balises HTML dans la chaine seront interprétées et afichées comme du code HTYML au lieu d'e^tre afficher comme du texte brut.<br>
+            le filtre "length" revoie la longueur de la chaine de caractères en nombre de caractères. L'operateur de comparaison " > " vérifie si la longueur de la chaine de caractères est superieur à 50 . SI c'est le cas , l'expression renvoie true? sinon elle revoie false            
+          </p>
+          
         </div>
       </div>
   </section>

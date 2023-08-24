@@ -109,7 +109,15 @@
           <br>
            la boucle "if" avec not app.user vérifie si l'objet "app.user est "faux
  ? c'est-à-dire s'il vaut null, false, ou une chaine vide. Si c'est le cas, le contenu de la boucle if sera exécuté.
-          <
+          
+          </p>
+
+          <h2>Les filtres</h2>
+          <p>
+            Les filtres permettent de modifier les variablres . On sépare la vaiable du filtre avec le symbole pipe "|".<br>
+            Il est possible d'enchainer plusieurs filtres ? il faudra à chaque fois rajouter un pipe pour chaque filtre.<br>
+            Sachez que vous pouvez créer vous-mêmes vos pro^pores filtres selon vos besoins .<br>
+            Un filtre = une fonction d'une classe PHP appelée qui recevera vos différents paramètres.
           </p>
         </div>
       </div>

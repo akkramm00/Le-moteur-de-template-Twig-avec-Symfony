@@ -128,6 +128,14 @@
             * raw :permet de désactiver m'échapement des caractères HTML dans la chaine de caractères. cela signifie que les balises HTML dans la chaine seront interprétées et afichées comme du code HTYML au lieu d'e^tre afficher comme du texte brut.<br>
             le filtre "length" revoie la longueur de la chaine de caractères en nombre de caractères. L'operateur de comparaison " > " vérifie si la longueur de la chaine de caractères est superieur à 50 . SI c'est le cas , l'expression renvoie true? sinon elle revoie false            
           </p>
+
+          <h2> Parenthèse autour des argumuments</h2>
+          Les filtres qui acceptent les arguments ont quant à eux des parenthèses autour des arguments comme ceci :<br><br>
+
+          {{ texte |join(', ') }}<br><br>
+
+          Cette expression Twig utilise le filtre pour concaténer tous les éléments d'une liste en une seule chaîne de caractères.
+          
           
         </div>
       </div>

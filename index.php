@@ -145,6 +145,10 @@ On peut notamment appliquer un filtre sur une section de code , avec "apply" et 
             Ce texte  sera en majuscule<br>
             
             {%endapply%}<br>
+
+
+            <h2>REMARQUE</h2>
+            il existe à ce joiur plus d'une cinquantaine de filtre prédéfinis par Twig. Vous pouvez les retrouver dans la documentation officielle de Twig, mais vous avez aussi la possibilité de créer un filtre personnalisé. Pour cela vous devez créer une classe extension afin de pouvoir l'utiliser.
             
             
             

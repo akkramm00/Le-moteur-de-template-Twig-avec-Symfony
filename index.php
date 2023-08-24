@@ -149,14 +149,39 @@ On peut notamment appliquer un filtre sur une section de code , avec "apply" et 
 
             <h2>REMARQUE</h2>
             il existe à ce joiur plus d'une cinquantaine de filtre prédéfinis par Twig. Vous pouvez les retrouver dans la documentation officielle de Twig, mais vous avez aussi la possibilité de créer un filtre personnalisé. Pour cela vous devez créer une classe extension afin de pouvoir l'utiliser.
-            
-            
-            
-          
            </p>
         </div>
       </div>
   </section>
+
+         <section class=="container">
+           <div class="row">
+             <div class="col">
+               <h1>Les fonctions en Twig</h1>
+               <p>
+                  Des fonctions peuvent etre appelées pour générer du contenu. Les fonctions sont appelées par leur nom suivi de parenthèses"()"" et peuvent avoir des arguments. En voici quelques unes foiurnies avec Twig:<br><br>
+
+                 * attributes() : permet d'accéder aux parametres dynamiques d'une variable.<br>
+                 * block() : permet de définir un block comme gabarit en utilisant l'héritage et pouvant appelé plusieurs fois.<br>
+                 * constant() : permet de retourner la valeur de la constantepar la  chaine de caractères spécifiés.<br>
+                 * cycle() : permet de retourner la valeur àla position de cellule d'un tableau.<br>
+                 * date() : permet de retourner la dayte avec le format spécifié.<br>
+                 * dump() : permet de sortir le contenu d'une variable spécifié.<br>
+                 * include () : permet de retourner le rendu du contenu d'un gabarit.<br>
+                 * max(): permet de retourner la plus grande valeur d'une séquence ou d'un ensemble de variables.<br>
+                 * min() : permet de retourner la plus ptite valeur d'une séquence ou d'un ensemble de variables.<br>
+                 * parent() : permet de retourner le contenu du bloc parent quand l'heritage de gabarit est utilisé.<br>
+                 ramdon() : permet de retourner iune valeur   aléatoire en fonction du contexte spécifié.<br>
+                 * range() : permet de retourner la liste de nombres compris dans l'intervale spécifié.<br>
+                 * source() : permet de retourner le contenu d'un gabarit sans son rendu.<br>
+                 * template-from_string() : permet de charger un gabarit à partir d'une chaine de acractères spécifiée.<br>
+                 
+                 
+                 
+               </p>
+             </div>
+           </div>
+         </section>
 
 
 

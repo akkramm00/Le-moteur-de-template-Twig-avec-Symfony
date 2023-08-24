@@ -186,6 +186,38 @@ On peut notamment appliquer un filtre sur une section de code , avec "apply" et 
            </div>
          </section>
 
+         <section class=="container">
+           <div class="row">
+             <div class="col">
+               <h1>Les conditions et les tests</h1>
+               <p>
+         L'utilisation des conditions s'avère être particulièrement facile à manipuler avec Twig. Cela peut se  faire avec if, elseif, else, endif. AInsi chaque structure de controle commence par une syntaxe ouvrante {% if%} puis fermante obligatoire {% endif%} comme le mmopntre l'exemple ci-dessous.<br><br</p>
+               {% if mavariable <= 10 %} <br><br>
+                 je suis au niveau 1 <br><br>
+                 {% elseif mavariable>10 and mavariable>20 %} <br><br>
+                 je suis au niveau 2  <br><br>
+                 {% else %} <br><br>
+                 je suis au niveau 3 <br><br>
+                 {% endif %}
+
+                 <h2>Explication des conditons</h2>
+            ce code utilise une  boucle "if" avec plusieurs conditions pôur afficheer un message différent en fonction de la valeur de la variable "mavariable". <br><br>
+
+                 La boucle vérifie d'abord si la valeur de la varaible "mavariable" est inférieur à 10. Si c'est le cas, le texte "je suis au niveau 1" sera affiché. <br><br>
+                 Si la valeur de "mavaraible" n'est pas inférieur ou égamle à 10, la boucle elseif vérifie si la valeur de "mavariable" est supérieur à 10 et inférieur à 20. Si c'est le cas , le texte "Jesuis au niveau 2 "sera affiché. <br><br>
+                 Si aucune des conditions précédebtes n'est pas remplie, la boucle else s'exécutera  et affichera le texte "Je suis au niveau 3". <br><br>
+
+                 
+                 
+
+                 
+                   
+                 
+               </p>
+             </div>
+           </div>
+         </section>
+
 
 
     

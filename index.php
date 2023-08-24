@@ -127,16 +127,29 @@
             Elle utilise également deux filtres: <br>
             * raw :permet de désactiver m'échapement des caractères HTML dans la chaine de caractères. cela signifie que les balises HTML dans la chaine seront interprétées et afichées comme du code HTYML au lieu d'e^tre afficher comme du texte brut.<br>
             le filtre "length" revoie la longueur de la chaine de caractères en nombre de caractères. L'operateur de comparaison " > " vérifie si la longueur de la chaine de caractères est superieur à 50 . SI c'est le cas , l'expression renvoie true? sinon elle revoie false            
-          </p>
+         
 
           <h2> Parenthèse autour des argumuments</h2>
           Les filtres qui acceptent les arguments ont quant à eux des parenthèses autour des arguments comme ceci :<br><br>
 
           {{ texte |join(', ') }}<br><br>
 
-          Cette expression Twig utilise le filtre pour concaténer tous les éléments d'une liste en une seule chaîne de caractères.
+          Cette expression Twig utilise le filtre pour concaténer tous les éléments d'une liste en une seule chaîne de caractères.<br>
+            le filtre join prend en argument une chaine de caractères qui sera utilisée comme séparateur entre chaque élément de la liste .Dans l'expression  {{ texte | join(', ')}}, la chaine ", " (une virgule et un espace ) est utlisée comme séparateur.
+
+             <h2>Apply et endapply</h2>  
+On peut notamment appliquer un filtre sur une section de code , avec "apply" et "endapply" comme suit :<br><br>
+
+            {% apply upper %}<br>
+
+            Ce texte  sera en majuscule<br>
+            
+            {%endapply%}<br>
+            
+            
+            
           
-          
+           </p>
         </div>
       </div>
   </section>

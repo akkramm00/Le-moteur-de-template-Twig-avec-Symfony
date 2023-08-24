@@ -206,18 +206,43 @@ On peut notamment appliquer un filtre sur une section de code , avec "apply" et 
                  La boucle vérifie d'abord si la valeur de la varaible "mavariable" est inférieur à 10. Si c'est le cas, le texte "je suis au niveau 1" sera affiché. <br><br>
                  Si la valeur de "mavaraible" n'est pas inférieur ou égamle à 10, la boucle elseif vérifie si la valeur de "mavariable" est supérieur à 10 et inférieur à 20. Si c'est le cas , le texte "Jesuis au niveau 2 "sera affiché. <br><br>
                  Si aucune des conditions précédebtes n'est pas remplie, la boucle else s'exécutera  et affichera le texte "Je suis au niveau 3". <br><br>
-
-                 
-                 
-
-                 
-                   
-                 
-               </p>
              </div>
            </div>
          </section>
 
+        <section class=="container">
+           <div class="row">
+             <div class="col">
+               <h1>Boucle "for"</h1>
+               <p>
+                 Il est très facile de boucler chaque éléments dans une séquence. Il suffit de déclarer  celle-ci avec l'expression "foor" et "in" et de terminer la boucle avec l'expression "endfor".
+               </p>
+               <h2>Exemple </h2>
+               <p>
+                 Voici quelques exemples :<br><br>
+
+                 {% for images in images %} <br>
+                 <li>{{ image.name}}</li><br>
+                 {% endfor %}<br><br>
+
+                 Ce code utilise une boucle for pour afficher une liste de noms dimages.<br>
+                 La boucle for parcourt  chaque élément de la liste images et exécute le contenu de la boucle pour chaque élément.<br>
+                 Dans chaque itération de la boucle, l'élément en cours est disponible via la variable image .<br>
+                 Dans cet exemple , la boucle for affiche chaque nom d'image dans la liste 'li'. La propriété name de l'objet immage est utilisé pour récupérer le nom de l'image.<br><br><br>
+
+                 {% for i in 0..10 %}<br>
+                 {{ i }}<br>
+                 {% endif %}<br><br>
+
+                 Ce code utilise une boucle for pour afficher tous les nombres de 0 à 10.
+                 
+                 
+                 
+               </p>
+
+             </div>
+           </div>
+         </section>
 
 
     

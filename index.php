@@ -90,6 +90,22 @@
 
           Pour récuperer cette variable et l'utiliser n'importe ou dans le projet , on peut utiliser la syntaxe suivante: <br><br>
          <h2> {{ titre }}</h2>
+
+          <br><br>
+          Twig fornit aussi ceratines variables globales, en voici la liste avec une succincte description:<br>
+          * debug : booleen indiquant si le débogage est activé ou non<br>
+          * environnement : indique l'environnement en cours , comme dev ou prod<br>
+          * request : instance de Symfony\Component\Httpfundation\Request<br>
+          * session : instance de Symfony\Component\HttpFoundation\session<br>
+          * flashes : tableau de session Flash message<br>
+          * user : instance de App\Entity\User<br>
+          * tokenStorage : instance de Symfony UsageTtrackingTokenStorage<br><br>
+
+          on appelle ces variables avec le préfixe "app"
+
+          
+
+        
             
             
           </p>

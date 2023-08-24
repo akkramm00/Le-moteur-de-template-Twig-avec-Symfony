@@ -74,8 +74,25 @@
     <section class="container">
       <div class="row">
         <div class="col">
-          
-          
+         <h2>Les variables Globales </h2>
+          <p>
+            Un variable globalle est une variable déclarée a l'extérieur des classe mais pouvant etre utilisée n'importe ou dans le projet. Elle peut également prendre le nom de variable de portée globale.<br><br>
+            Dans Symfony, pour créer des variables globales ,c-à-d des variables qui seront utilisables dans toute l'application sans avoir besoin de l'injecter à chaque fois dans le controller? il faut commencer par se rendre dans le fichier "twig.yaml" qui se trouve dans le dossier config et créer sa variable globale. <br><br>
+            Le chemin exacte est : config\packaegs\twig.yaml. <br><br>
+            
+          <h2>Exemple</h2>
+
+            Twig:<br>
+            default_path: '%kernel.project_dir%/templates'<br>
+            globals:<br>
+            titre: 'le titre que je veux réutiliser'<br><br</p>
+
+
+          Pour récuperer cette variable et l'utiliser n'importe ou dans le projet , on peut utiliser la syntaxe suivante: <br><br>
+         <h2> {{ titre }}</h2>
+            
+            
+          </p>
         </div>
       </div>
   </section>

@@ -102,12 +102,14 @@
           * tokenStorage : instance de Symfony UsageTtrackingTokenStorage<br><br>
 
           on appelle ces variables avec le préfixe "app"
-
           
+          <h2>Exemple</h2>
 
-        
-            
-            
+          {% if not app.user %} 
+          <br>
+           la boucle "if" avec not app.user vérifie si l'objet "app.user est "faux
+ ? c'est-à-dire s'il vaut null, false, ou une chaine vide. Si c'est le cas, le contenu de la boucle if sera exécuté.
+          <
           </p>
         </div>
       </div>

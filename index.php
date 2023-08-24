@@ -1,8 +1,12 @@
 <html>
   <head>
     <title>Le monteur de template Twig</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
 <h1>Utilisation et Syntaxe de Twig</h1>
 
     <p>
@@ -15,7 +19,13 @@
       * {% ... %} : Permet d'exécuter une action.<br>
       * {# ... #} : Permet d'ajouter des commentaires.<br>
     </p>
-
+          
+        </div>
+      </div>
+    </div>
+     <section class="container">
+      <div class="row">
+        <div class="col">
     <h2>Les variables</h2>
 
     <p>
@@ -25,18 +35,53 @@
         {{ objet.attribut }}
       <br><br>
       Dans l'exemple ci-dessous "image.name" fait reference au nom de l'objet image. Twig affichera donc son nom. Grace à cette syntaxe? il est possible d'accéder à des méthodes , des prpriétés d'un objet, ou me^me un élément de tableau.
+        </div>
+      </div>
+     </section>
 
+       <header class="container">
+      <div class="row">
+        <div class="col">
       <h2>Exemple</h2>
        Imaginons que notre image se nomme "Belle image" et que l'on retrouve ceci dans le HTML:<br><br>
 
       <pre><h1> Le nom de l'image est : {{ image.name}}  </h1></pre><br><br>
     le code ci-dessus affichera :<br>
     le nom de l'image est : Belle image.
-
-      
-      
-        
     </p>
+
+        <h2> La balise "set"</h2>
+    <p>
+      Nous pouvons utiliser à tout moment la syntaxe ci-dessous pour créer des variables:
+      {%% set exemple = 'coucou'} <br></br>
+    Cela définira la variable exemple avec la chaine de caractères "coucou".<br>
+    Nous pouvons ensuite utiliser cette varaible ailleurs dans notre modèle en la référençant avec  :  {{ exmple }}.<br>
+        {% set exempleTableauiteratif= [1,2]%}<br><br>
+          Ce code définira la variable exempleTableauIteratif comme etant un tableau contenant les éléments 1 et 2. Il ne produira aucune sortir dans le modèle.<br><br>
+
+          {% exempleTableauAssociatif = {'lundi': 'travail'}%}<br><br>
+
+          Ce code définira la variable exempleTableauAssociatif comme étant un tableau associatif(également appelé dictionnaire ou map) avec un seul élémnt . L'élément a une clé "lundi" et une valeur "travail"
+          
+    
+      
+    </p>
+          
+        </div>
+      </div>
+     </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="col">
+          
+          
+        </div>
+      </div>
+  </section>
+
+
+
     
   </body>
 </html>

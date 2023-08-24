@@ -174,10 +174,13 @@ On peut notamment appliquer un filtre sur une section de code , avec "apply" et 
                  ramdon() : permet de retourner iune valeur   aléatoire en fonction du contexte spécifié.<br>
                  * range() : permet de retourner la liste de nombres compris dans l'intervale spécifié.<br>
                  * source() : permet de retourner le contenu d'un gabarit sans son rendu.<br>
-                 * template-from_string() : permet de charger un gabarit à partir d'une chaine de acractères spécifiée.<br>
+                 * template-from_string() : permet de charger un gabarit à partir d'une chaine de acractères spécifiée.<br><br>
                  
-                 
-                 
+                 <h2>Exemple d'une fonction</h2>
+
+                 {{ max(1, 2, 3) }} ou {{ max([1, 2, 3]) }} <br>
+                  Cette expression Twig utilise la fonctio max pour renvoyer le plus grand nombre dans une liste de nombres.La fonction prend en argument une lise de nombres et renvoie le plus élevé, ici c'est le chiffre "3". 
+             
                </p>
              </div>
            </div>

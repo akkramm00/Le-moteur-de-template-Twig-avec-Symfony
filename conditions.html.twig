@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{%block header_title  %}
+    {% if is_grabted('ROLE_INDMIN') %}
+    <h1>{{ titre }}</h1>
+
+    {% elseif is_granted('ROLE_USER') %}
+     <h1>{{ Bienvenue sur Toodo List ! }}</h1>
+
+    {% else %}
+     <h1>{{ Bienvenue ! }}</h1>
+    {% endif %}
+
+{% endBlock%}

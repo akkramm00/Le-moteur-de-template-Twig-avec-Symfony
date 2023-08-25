@@ -235,15 +235,23 @@ On peut notamment appliquer un filtre sur une section de code , avec "apply" et 
                  {% endif %}<br><br>
 
                  Ce code utilise une boucle for pour afficher tous les nombres de 0 à 10.
-                 
-                 
-                 
+
                </p>
 
              </div>
            </div>
          </section>
 
+          <section class=="container">
+           <div class="row">
+             <div class="col">
+               <h1></h1>
+               <p>
+
+               </p>
+             </div>
+           </div>
+         </section>
 
     
   </body>

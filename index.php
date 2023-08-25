@@ -266,6 +266,16 @@ A l'interieur d'un bloc "for" , il est possible d'accéder à ceratins variables
            </div>
          </section>
 
-    
+          <section class=="container">
+           <div class="row">
+             <div class="col">
+               <h1>L'héritage</h1>
+               <p>
+    l'héritage est une parttie particulièrement intéressante de twig. Il est possible de créer un modèle ou un squelette qui contient tous les éléments communs aux différentes pages de l'application . Pour cela, il faut créer des blocs et leurs donner un nom.<brb>
+      voir le fichier base.html.twig.
+               </p>
+             </div>
+           </div>
+         </section>
   </body>
 </html>

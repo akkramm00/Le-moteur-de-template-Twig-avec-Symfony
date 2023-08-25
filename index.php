@@ -221,7 +221,7 @@ On peut notamment appliquer un filtre sur une section de code , avec "apply" et 
                <p>
                  Voici quelques exemples :<br><br>
 
-                 {% for images in images %} <br>
+                 {% for image in images %} <br>
                  <li>{{ image.name}}</li><br>
                  {% endfor %}<br><br>
 
@@ -245,9 +245,19 @@ On peut notamment appliquer un filtre sur une section de code , avec "apply" et 
           <section class=="container">
            <div class="row">
              <div class="col">
-               <h1></h1>
+               <h1>Les variables spéciales</h1>
                <p>
+A l'interieur d'un bloc "for" , il est possible d'accéder à ceratins variables spéciales:<br><br>
 
+                 * loop.index : itèration actuelle de la boucle (1 indexé)
+                 * loop.index0 : itèration actuelle de la boucle (0 indexé)
+                 * loop.revindex : nombre d'itérations à partir de la  fin de la boucle (1 indexé)
+                 * loop.revindex0 : nombre d'itérationà partir de la fin de la boucle (0 indexé)
+                 * loop.first : vrai si première itération
+                 * loop.last : vrai si dernière itération
+                 * loop.length :nombre d'éléments de la séquece
+                 * loop.parent : contexte du parent.
+                 
                </p>
              </div>
            </div>

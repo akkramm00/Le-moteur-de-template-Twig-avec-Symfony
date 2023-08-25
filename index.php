@@ -234,7 +234,8 @@ On peut notamment appliquer un filtre sur une section de code , avec "apply" et 
                  {{ i }}<br>
                  {% endif %}<br><br>
 
-                 Ce code utilise une boucle for pour afficher tous les nombres de 0 à 10.
+                 Ce code utilise une boucle for pour afficher tous les nombres de 0 à 10.<br><br>
+                 Voir exemple sur le ficheir conditions.html.twig
 
                </p>
 
@@ -249,14 +250,16 @@ On peut notamment appliquer un filtre sur une section de code , avec "apply" et 
                <p>
 A l'interieur d'un bloc "for" , il est possible d'accéder à ceratins variables spéciales:<br><br>
 
-                 * loop.index : itèration actuelle de la boucle (1 indexé)
-                 * loop.index0 : itèration actuelle de la boucle (0 indexé)
-                 * loop.revindex : nombre d'itérations à partir de la  fin de la boucle (1 indexé)
-                 * loop.revindex0 : nombre d'itérationà partir de la fin de la boucle (0 indexé)
-                 * loop.first : vrai si première itération
-                 * loop.last : vrai si dernière itération
-                 * loop.length :nombre d'éléments de la séquece
-                 * loop.parent : contexte du parent.
+                 * loop.index : itèration actuelle de la boucle (1 indexé)<br>
+                 * loop.index0 : itèration actuelle de la boucle (0 indexé)<br>
+                 * loop.revindex : nombre d'itérations à partir de la  fin de la boucle (1 indexé)<br>
+                 * loop.revindex0 : nombre d'itérationà partir de la fin de la boucle (0 indexé)<br>
+                 * loop.first : vrai si première itération<br>
+                 * loop.last : vrai si dernière itération<br>
+                 * loop.length :nombre d'éléments de la séquece<br>
+                 * loop.parent : contexte du parent.<br><br>
+
+                 Voir exemple de condition sur le fichier "list.html.twig"
                  
                </p>
              </div>

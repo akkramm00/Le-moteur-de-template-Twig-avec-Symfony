@@ -1,0 +1,35 @@
+{% block body %}
+    {% if users|length == 0 %}
+        <div class="alert alert-warning" role="alert">
+          Il n'y a pase encore d'utilisateur enregistré. <a href="{{ path}}('user_create') }}" class="btn btn-primary">Créer un utilisateur</a>
+        </div>
+    {% else %}
+        <div class="row">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nom d'utilisateur</th>
+                <th>Adresse de l'utilisateur</th>
+                <th>Id</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+            {% for user in users %}
+              <tr>
+                <th scope="row">{{ loop.index }}</th>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.id }}</td>
+                <td>
+                  <a href=" {{ path('user_edit', { id : user.id}) }}"  class="btn btn-success">Edit</a>
+                </td>
+              </tr>
+              {%endif%}
+            </tbody>
+            
+          </table>
+        </div>
+{% endblock %}

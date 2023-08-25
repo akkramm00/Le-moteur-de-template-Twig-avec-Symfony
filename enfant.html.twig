@@ -1,0 +1,11 @@
+{% extends "base.html.twig " %}
+{% block title %} Page enfant {% endblock %}
+{% block content %}
+    <h1> Exemple</h1>
+    {{ foorm(form) }}
+{% endblock %}
+
+
+Ce code définit un template enfant qui étend le modèle "base.html.twig" et remplace les block "title "et "content" du modèle parent.<br>
+
+Le template enfant utilise la forction "form" de twig pour afficher un formulaire HTML généré à partir dde l'objet form bien sûr si le composant de Form de symfony est également installé.
